@@ -1,6 +1,6 @@
 {
   "name": "redux-keen",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Redux middleware for sending analytics to Keen.",
   "main": "lib/index.js",
   "scripts": {
