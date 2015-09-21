@@ -21,7 +21,7 @@ let keenMiddleware = keenAnalytics('YOUR_PROJECT_ID', 'YOUR_WRITE_KEY');
 
 The default export is a function requiring Keen IO project id and API write key. This function returns a middleware function, that can be applied using `applyMiddleware` from [Redux](http://rackt.github.io/redux).
 
-If it receives an <!--- FSA? Should the action be FSA or is it too restrictive? --> action whose `meta` property contains an `analytics` property with non-empty `collection` property, it will record the event in the Keen IO analytics.
+If it receives an action whose `meta` property contains an `analytics` property with non-empty `collection` property, it will record the event in the Keen IO analytics.
 
 ### Actions
 
