@@ -1,0 +1,32 @@
+{
+  "name": "redux-keen",
+  "version": "0.0.2",
+  "description": "Redux middleware for sending analytics to Keen.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib/ && ./node_modules/.bin/babel -d lib/ src/",
+    "prepublish": "npm run build",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavelvolek/redux-keen.git"
+  },
+  "homepage": "https://github.com/pavelvolek/redux-keen",
+  "keywords": [
+    "redux",
+    "middleware",
+    "redux-middleware",
+    "keen",
+    "analytics"
+  ],
+  "author": "Pavel Volek <me@pavelvolek.cz>",
+  "license": "MIT",
+  "dependencies": {
+    "keen-js": "^3.2.7"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "mocha": "^2.3.2"
+  }
+}
