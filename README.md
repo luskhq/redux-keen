@@ -15,11 +15,13 @@ npm install --save redux-keen
 
 ```js
 import keenAnalytics from 'redux-keen';
+import Keen from 'keen-js';
 
-let keenMiddleware = keenAnalytics('YOUR_PROJECT_ID', 'YOUR_WRITE_KEY');
+let keenClient = new Keen({ projectId: 'YOUR_PROJECT_ID', writeKey: 'YOUR_WRITE_KEY' });
+let keenMiddleware = keenAnalytics(keenClient);
 ```
 
-The default export is a function requiring Keen IO project id and API write key. This function returns a middleware function, that can be applied using `applyMiddleware` from [Redux](http://rackt.github.io/redux).
+The default export is a function requiring [keen-js](https://github.com/keen/keen-js) client instance. This function returns a middleware function, that can be applied using `applyMiddleware` from [Redux](http://rackt.github.io/redux).
 
 If it receives an action whose `meta` property contains an `analytics` property with non-empty `collection` property, it will record the event in the Keen IO analytics.
 
