@@ -32,7 +32,7 @@
     "no-lone-blocks": 2,
     "no-undef": 2,
     "no-undefined": 2,
-    "no-unused-vars": [2, {"varsIgnorePattern": "^style$"}],
+    "no-unused-vars": 2,
     "no-use-before-define": 2,
     "array-bracket-spacing": [2, "never"],
     "brace-style": [2, "stroustrup"],
