@@ -22,9 +22,6 @@
   ],
   "author": "Pavel Volek <me@pavelvolek.cz>",
   "license": "MIT",
-  "dependencies": {
-    "keen-js": "^3.2.7"
-  },
   "devDependencies": {
     "babel": "^5.8.23",
     "mocha": "^2.3.2"

@@ -4,11 +4,9 @@ function isFunction(val) {
   return typeof val === 'function';
 }
 
-export default function keenAnalytics(projectId, writeKey, getGlobals) {
-  if (!projectId) throw new Error('You must provide a project id.');
-  if (!writeKey) throw new Error('You must provide a write key required for sending data.');
+export default function keenAnalytics(keenClient, getGlobals) {
+  if (!keenClient || !keenClient.addEvent) throw new Error('You must provide a keen-js client instance.');
 
-  let keenClient = new Keen({ projectId, writeKey });
   let globals = {};
 
   return store => next => action => {
