@@ -5,7 +5,7 @@ redux-keen
 
 [Redux](http://rackt.github.io/redux) middleware for sending analytics to [Keen IO](https://keen.io/).
 
-## Instalation
+## Installation
 
 ```js
 npm install --save redux-keen
