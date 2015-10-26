@@ -1,6 +1,7 @@
 redux-keen
 ==========
 
+[![Build Status](https://travis-ci.org/pavelvolek/redux-keen.svg)](https://travis-ci.org/pavelvolek/redux-keen)
 [![npm version](https://img.shields.io/npm/v/redux-keen.svg?style=flat-square)](https://www.npmjs.com/package/redux-keen)
 
 [Redux](http://rackt.github.io/redux) middleware for sending analytics to [Keen IO](https://keen.io/).
